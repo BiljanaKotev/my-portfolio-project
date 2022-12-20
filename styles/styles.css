@@ -4,7 +4,6 @@
 }
 
 body {
-  margin: 50px auto;
   text-align: center;
 }
 
@@ -19,10 +18,17 @@ hr {
 
 h1 {
   margin-top: 10px;
+  font-family: "playfair";
 }
 
 h2 {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-family: "playfair";
+  padding-top: 25px;
+}
+
+p {
+  font-family: "poppins";
 }
 
 .social-icons {
@@ -52,6 +58,7 @@ h2 {
 
 img {
   border-radius: 50%;
+  margin-left: 50px;
 }
 
 .intro-section {
@@ -71,14 +78,16 @@ img {
   margin-bottom: 100px;
   justify-content: center;
   gap: 50px;
+  margin-top: 25px;
+}
+
+.skills-heading {
+  padding-bottom: 50px;
+  margin-bottom: 0;
 }
 
 .fa-html5 {
   color: #ff3366;
-}
-
-.fa-css3-alt {
-  color: var(--primary-color);
 }
 
 .fa-js {
@@ -100,4 +109,22 @@ a {
 .btn {
   padding: 10px 15px 10px 15px;
   border: none;
+}
+
+.about-me {
+  background-color: #ff8eab;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.about-p {
+  width: 50%;
+  margin: 0 auto;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  padding-bottom: 25px;
+}
+
+.my-work {
+  margin-top: 100px;
 }
