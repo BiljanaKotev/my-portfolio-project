@@ -1,5 +1,13 @@
 body {
   text-align: center;
+  background-color: #f3e9f3;
+}
+
+main {
+  background: white;
+  width: 75vw;
+  margin: 0 auto;
+  height: 100%;
 }
 
 hr {
@@ -8,27 +16,19 @@ hr {
 }
 
 h1 {
+  font-size: 18px;
   margin-top: 10px;
   font-family: "playfair";
 }
 
 h2 {
-  margin-bottom: 30px;
+  padding-top: 25px;
+
   font-family: "playfair";
 }
 
 p {
   font-family: "poppins";
-}
-
-.social-icons {
-  display: flex;
-  flex-direction: column;
-  margin-right: 0px;
-  right: 400px;
-  gap: 70px;
-  justify-content: center;
-  position: relative;
 }
 
 .fa-twitter {
@@ -45,27 +45,19 @@ p {
 
 .hero-section {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 80px;
   margin-bottom: 100px;
-  margin-left: 175px;
-}
-
-.profile-img {
-  border-radius: 5px;
-  margin-left: 50px;
 }
 
 .intro-section {
-  width: 450px;
   text-align: left;
   height: auto;
   margin-left: 50px;
 }
 
 .intro-p {
-  width: 250px;
-  height: auto;
+  font-size: 36px;
 }
 
 .skill-icons {
@@ -140,6 +132,9 @@ a {
   padding: 10px 15px 10px 15px;
   border: none;
   margin-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 a i {
@@ -154,8 +149,30 @@ a.nav-link:hover {
   color: #29a8df;
 }
 
-.img-container {
-  margin-top: 150px;
+.middle-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.about-p {
+  width: 500px;
+  margin: 25px auto;
+  padding-bottom: 25px;
+}
+
+.about-me {
+  background-color: #ff8eab;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.profile-img {
+  border-radius: 50%;
 }
 
 .project-img {
@@ -163,28 +180,22 @@ a.nav-link:hover {
   height: auto;
 }
 
-.project-img:hover {
-  transform: scale(1.5);
-  transition: ease-in-out 1s;
-}
-
-.about-p {
-  width: 500px;
-  margin: 25px auto;
-}
-
 .social-icons-footer {
-  display: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-@media (max-width: 650px) {
+.work-container {
+  margin-top: 100px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 992px) {
   .hero-section {
     flex-direction: column;
     margin: 25px 0 0 0;
-  }
-
-  .social-icons {
-    display: none;
   }
 
   .img-container {
@@ -205,13 +216,12 @@ a.nav-link:hover {
     width: auto;
   }
 
-  .social-icons-footer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-
   .about-p {
     width: auto;
+  }
+
+  .middle-section {
+    flex-direction: column;
+    gap: 25px;
   }
 }

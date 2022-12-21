@@ -28,41 +28,62 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-lg bg-white">
-      <div class="container-fluid">
-        <a class="navbar-brand ms-5" href="index.html">Biljana Kotevska</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav">
-            <a
-              class="nav-link active pe-5"
-              aria-current="page"
-              href="index.html"
-              >Home</a
-            >
-            <a class="nav-link pe-5" href="about.html">About</a>
-            <a class="nav-link pe-5" href="work.html">Work</a>
-            <a class="nav-link pe-5" href="contact.html">Contact</a>
+    <main>
+      <nav class="navbar sticky-top navbar-expand-lg bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-5" href="index.html">Biljana Kotevska</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a
+                class="nav-link active pe-5"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+              <a class="nav-link pe-5" href="about.html">About</a>
+              <a class="nav-link pe-5" href="contact.html">Contact</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <div class="hero-section">
-      <div class="social-icons">
+      <div class="hero-section">
+        <div class="intro-section">
+          <h1>Hi I'm Biljana</h1>
+          <p class="intro-p">
+            A Front End Developer with a knack for coding and a passion for
+            constantly learning new things.
+          </p>
+        </div>
+      </div>
+
+      <h2 class="skills-heading">Skills</h2>
+      <div class="skill-icons">
+        <i class="skill-icon fa-brands fa-html5 fa-2xl"></i>
+        <i class="skill-icon fa-brands fa-css3-alt fa-2xl"></i>
+        <i class="skill-icon fa-brands fa-js fa-2xl"></i>
+        <i class="skill-icon fa-brands fa-bootstrap fa-2xl"></i>
+        <i class="skill-icon fa-brands fa-figma fa-2xl"></i>
+      </div>
+      <div class="button-links">
+        <a class="contact-link btn btn-primary me-3" href="">Contact</a>
+        <a class="work-link btn btn-dark shadow-reg" href="">About Me</a>
+      </div>
+      <footer class="social-icons-footer">
         <a href="https://twitter.com/home" target="_blank"
           ><i class="fa-brands fa-twitter fa-xl"></i
         ></a>
@@ -72,42 +93,60 @@
         <a href="https://github.com/BiljanaKotev" target="_blank"
           ><i class="fa-brands fa-github fa-xl"></i
         ></a>
-      </div>
-      <div class="img=container">
-        <img class="profile-pic" src="images/profile-pic.jpg" alt="" />
-      </div>
-      <div class="intro-section">
-        <h1>Hi I'm Biljana</h1>
+      </footer>
 
-        <p class="intro-p">
-          A Front End Developer with a knack for coding and a passion for
-          constantly learning new things.
-        </p>
+      <div class="middle-section">
+        <div class="img-container">
+          <img class="profile-img" src="images/profile-pic.jpg" alt="" />
+        </div>
+        <div class="about-me">
+          <h2>About Me</h2>
+          <p class="about-p">
+            I’m a self taught Front End Developer who is currently learning
+            JavaScript. I love coding and seeing the end results of whatever it
+            is I’m creating. When I’m not in front of my computer, I’m reading a
+            good book or spending time outside in nature.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <h2 class="skills-heading">Skills</h2>
-    <div class="skill-icons">
-      <i class="skill-icon fa-brands fa-html5 fa-2xl"></i>
-      <i class="skill-icon fa-brands fa-css3-alt fa-2xl"></i>
-      <i class="skill-icon fa-brands fa-js fa-2xl"></i>
-      <i class="skill-icon fa-brands fa-bootstrap fa-2xl"></i>
-      <i class="skill-icon fa-brands fa-figma fa-2xl"></i>
-    </div>
-    <div class="button-links">
-      <a class="contact-link btn btn-primary me-3" href="">Contact</a>
-      <a class="work-link btn btn-dark" href="">My Work</a>
-    </div>
-    <footer class="social-icons-footer">
-      <a href="https://twitter.com/home" target="_blank"
-        ><i class="fa-brands fa-twitter fa-xl"></i
-      ></a>
-      <a href="https://www.linkedin.com/in/biljana-kotevska/" target="_blank">
-        <i class="fa-brands fa-linkedin fa-xl"></i
-      ></a>
-      <a href="https://github.com/BiljanaKotev" target="_blank"
-        ><i class="fa-brands fa-github fa-xl"></i
-      ></a>
-    </footer>
+      <div class="work-container">
+        <div class="container img-container text-center">
+          <div class="row">
+            <div class="col-6">
+              <a
+                href="https://github.com/BiljanaKotev/she-codes-landing-page-project"
+                target="_blank"
+                ><img
+                  class="img-fluid img-thumbnail mb-3 project-img"
+                  src="images/biljanakotev.github.io_she-codes-landing-page-project_.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-6">
+              <img
+                class="img-fluid img-thumbnail mb-3 project-img"
+                src="images/vanilla-js-weather-app.png"
+                alt=""
+              />
+            </div>
+            <div class="col-6">
+              <img
+                class="img-fluid img-thumbnail mb-3 project-img"
+                src="images/biljanakotev.github.io_responsive-portfolio-site_.png"
+                alt=""
+              />
+            </div>
+            <div class="col-6">
+              <img
+                class="img-fluid img-thumbnail mb-3 project-img"
+                src="images/news-homepage.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
