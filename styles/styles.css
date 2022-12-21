@@ -173,7 +173,7 @@ a.nav-link:hover {
   margin: 25px auto;
 }
 
-@media (max-width: 352px) {
+@media (max-width: 567px) {
   .hero-section {
     flex-direction: column;
     margin: 25px 0 0 0;
