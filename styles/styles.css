@@ -51,7 +51,7 @@ p {
   margin-left: 175px;
 }
 
-img {
+.profile-img {
   border-radius: 5px;
   margin-left: 50px;
 }
@@ -80,7 +80,6 @@ img {
   padding-bottom: 50px;
   margin-bottom: 0;
 }
-
 .skill-icon {
   -webkit-animation-duration: 1s;
   animation-duration: 3s;
@@ -153,4 +152,52 @@ a:hover i {
 
 a.nav-link:hover {
   color: #29a8df;
+}
+
+.img-container {
+  margin-top: 150px;
+}
+
+.project-img {
+  width: 500px;
+  height: auto;
+}
+
+.project-img:hover {
+  transform: scale(1.5);
+  transition: ease-in-out 1s;
+}
+
+.about-p {
+  width: 500px;
+  margin: 25px auto;
+}
+
+@media (max-width: 352px) {
+  .hero-section {
+    flex-direction: column;
+    margin: 25px 0 0 0;
+  }
+
+  .social-icons {
+    display: none;
+  }
+
+  .img-container {
+    margin: 25px;
+  }
+
+  .intro-section {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+
+  h1 {
+    margin-top: 25px;
+  }
+
+  .intro-p {
+    width: auto;
+  }
 }
