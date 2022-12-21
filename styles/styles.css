@@ -7,9 +7,9 @@ body {
   text-align: center;
 }
 
-.navbar-nav {
+/* .navbar-nav {
   margin-right: 150px;
-}
+} */
 
 hr {
   width: 40%;
@@ -34,10 +34,11 @@ p {
 .social-icons {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 40px;
-  margin-top: 50px;
-  margin-right: 50px;
+  margin-right: 0px;
+  right: 400px;
+  gap: 70px;
+  justify-content: center;
+  position: relative;
 }
 
 .fa-twitter {
@@ -51,13 +52,13 @@ p {
 .hero-section {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 100px;
   margin-left: 175px;
 }
 
 img {
-  border-radius: 50%;
+  border-radius: 5px;
   margin-left: 50px;
 }
 
@@ -69,7 +70,7 @@ img {
 }
 
 .intro-p {
-  width: 300px;
+  width: 250px;
   height: auto;
 }
 
@@ -109,22 +110,13 @@ a {
 .btn {
   padding: 10px 15px 10px 15px;
   border: none;
+  margin-bottom: 50px;
 }
 
-.about-me {
-  background-color: #ff8eab;
-  margin-top: 150px;
-  text-align: center;
-}
-
-.about-p {
+/* .about-p {
   width: 50%;
   margin: 0 auto;
   letter-spacing: 0.5px;
   line-height: 20px;
   padding-bottom: 25px;
-}
-
-.my-work {
-  margin-top: 100px;
-}
+}  */
