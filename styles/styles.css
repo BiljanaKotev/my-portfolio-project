@@ -173,6 +173,10 @@ a.nav-link:hover {
   margin: 25px auto;
 }
 
+.social-icons-footer {
+  display: none;
+}
+
 @media (max-width: 650px) {
   .hero-section {
     flex-direction: column;
@@ -199,5 +203,12 @@ a.nav-link:hover {
 
   .intro-p {
     width: auto;
+  }
+
+  .social-icons-footer {
+    display: block;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
   }
 }
