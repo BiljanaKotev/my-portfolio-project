@@ -1,15 +1,6 @@
-:root {
-  --primary-color: #29a8df;
-  --secondary-color: #ff8eab;
-}
-
 body {
   text-align: center;
 }
-
-/* .navbar-nav {
-  margin-right: 150px;
-} */
 
 hr {
   width: 40%;
@@ -24,7 +15,6 @@ h1 {
 h2 {
   margin-bottom: 30px;
   font-family: "playfair";
-  padding-top: 25px;
 }
 
 p {
@@ -42,17 +32,21 @@ p {
 }
 
 .fa-twitter {
-  color: var(--primary-color);
+  color: #29a8df;
 }
 
 .fa-linkedin {
   color: #0a66c2;
 }
 
+.fa-github {
+  color: #000000;
+}
+
 .hero-section {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-bottom: 100px;
   margin-left: 175px;
 }
@@ -87,6 +81,42 @@ img {
   margin-bottom: 0;
 }
 
+.skill-icon {
+  -webkit-animation-duration: 1s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 3s;
+  -webkit-animation-iteration-count: 3s;
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
 .fa-html5 {
   color: #ff3366;
 }
@@ -104,7 +134,7 @@ a {
 }
 
 .contact-link {
-  background-color: var(--primary-color);
+  background-color: #29a8df;
 }
 
 .btn {
@@ -113,10 +143,14 @@ a {
   margin-bottom: 50px;
 }
 
-/* .about-p {
-  width: 50%;
-  margin: 0 auto;
-  letter-spacing: 0.5px;
-  line-height: 20px;
-  padding-bottom: 25px;
-}  */
+a i {
+  transition: all 0.3s linear;
+}
+
+a:hover i {
+  transform: scale(1.5);
+}
+
+a.nav-link:hover {
+  color: #29a8df;
+}
