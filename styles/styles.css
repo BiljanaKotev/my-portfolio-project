@@ -206,9 +206,12 @@ a.nav-link:hover {
   }
 
   .social-icons-footer {
-    display: block;
     display: flex;
     justify-content: center;
     gap: 20px;
+  }
+
+  .about-p {
+    width: auto;
   }
 }
