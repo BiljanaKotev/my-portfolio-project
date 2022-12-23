@@ -1,14 +1,5 @@
 body {
   text-align: center;
-  /* background-color: #f3e9f3; */
-}
-
-main {
-  /* background: white;
-  width: 75vw;
-  margin: 0 auto;
-  height: 100%; */
-  margin: 0 100px 0 100px;
 }
 
 hr {
@@ -157,7 +148,6 @@ a.nav-link:hover {
 }
 
 .about-p {
-  /* width: 500px; */
   margin: 25px auto;
   padding-bottom: 25px;
 }
