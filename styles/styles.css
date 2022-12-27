@@ -183,10 +183,6 @@ a.nav-link:hover {
   border-radius: 50%;
 }
 
-.work-link {
-  margin-top: 100px;
-}
-
 /* Work page */
 .projext-container {
   margin-top: 75px;
@@ -221,31 +217,15 @@ a.nav-link:hover {
     width: auto;
   }
 
-  .work-link {
-    margin: 0;
-  }
-
   .intro-section {
     margin: auto;
     text-align: center;
   }
-  /* 
-  h1 {
-    margin-top: 25px;
-  } */
 
   .intro-p {
-    width: auto;
     font-size: 22px;
   }
-
   .about-me {
     width: auto;
-    margin-top: 50px;
-  }
-
-  .middle-section {
-    flex-direction: column;
-    gap: 25px;
   }
 }
