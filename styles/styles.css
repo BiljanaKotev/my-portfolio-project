@@ -125,10 +125,6 @@ a {
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
-/* a:link {
-  color: #000000;
-} */
-
 a i {
   transition: all 0.3s linear;
 }
@@ -203,6 +199,10 @@ a.nav-link:hover {
   display: inline-block;
   padding: 25px;
 }
+
+/* .resume-link {
+  margin-bottom: 0;
+} */
 
 /* MEDIA QUERIES */
 
