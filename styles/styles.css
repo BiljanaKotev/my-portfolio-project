@@ -10,18 +10,18 @@ hr {
 h1 {
   font-size: 18px;
   margin-top: 10px;
-  font-family: "playfair";
+  font-family: "Playfair Display", serif;
 }
 
 h2 {
-  font-family: "playfair";
+  font-family: "Playfair Display", serif;
   font-size: 24px;
   font-weight: bold;
   padding-top: 15px;
 }
 
 p {
-  font-family: "poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   padding-bottom: 25px;
 }
@@ -110,6 +110,7 @@ p {
 
 a {
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 
 .contact-link {
