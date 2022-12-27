@@ -206,6 +206,10 @@ a.nav-link:hover {
   padding: 25px;
 }
 
+.resume-link:hover {
+  color: #ffffff;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 992px) {
