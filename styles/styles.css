@@ -133,6 +133,11 @@ a:hover i {
   transform: scale(1.5);
 }
 
+a:active {
+  color: #000000;
+  font-weight: bold;
+}
+
 a.nav-link:hover {
   color: #29a8df;
 }
@@ -200,10 +205,6 @@ a.nav-link:hover {
   padding: 25px;
 }
 
-/* .resume-link {
-  margin-bottom: 0;
-} */
-
 /* MEDIA QUERIES */
 
 @media (max-width: 992px) {
@@ -223,10 +224,10 @@ a.nav-link:hover {
     margin: auto;
     text-align: center;
   }
-
+  /* 
   h1 {
     margin-top: 25px;
-  }
+  } */
 
   .intro-p {
     width: auto;
