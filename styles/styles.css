@@ -7,21 +7,28 @@ hr {
   margin: 25px auto;
 }
 
-h1 {
-  font-size: 18px;
-  margin-top: 10px;
+h1,
+h2 {
   font-family: "Playfair Display", serif;
 }
 
+h1 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
 h2 {
-  font-family: "Playfair Display", serif;
   font-size: 24px;
   font-weight: bold;
   padding-top: 15px;
 }
 
-p {
+p,
+a {
   font-family: "Poppins", sans-serif;
+}
+
+p {
   font-size: 14px;
   padding-bottom: 25px;
 }
@@ -110,7 +117,6 @@ p {
 
 a {
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
 }
 
 .contact-link {
@@ -134,11 +140,9 @@ a:hover i {
   transform: scale(1.5);
 }
 
-a.nav-link:hover {
-  color: #29a8df;
-}
-
-a {
+a.nav-link:hover,
+a,
+.fa-twitter {
   color: #29a8df;
 }
 
@@ -146,8 +150,12 @@ a:hover {
   color: grey;
 }
 
-a:active {
+a:active,
+.fa-github {
   color: #000000;
+}
+
+a:active {
   font-weight: bold;
 }
 
@@ -159,16 +167,8 @@ a:active {
   margin-top: 50px;
 }
 
-.fa-twitter {
-  color: #29a8df;
-}
-
 .fa-linkedin {
   color: #0a66c2;
-}
-
-.fa-github {
-  color: #000000;
 }
 
 /* About page */
@@ -203,7 +203,7 @@ a:active {
 /* Contact page */
 
 .contact-box {
-  border: 3px solid black;
+  border: 3px solid #000000;
   margin: 25px;
   display: inline-block;
   padding: 25px;
@@ -234,5 +234,9 @@ a:active {
   }
   .about-me {
     width: auto;
+  }
+  .open-source {
+    max-width: 75%;
+    margin: 0 auto;
   }
 }
