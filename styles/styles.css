@@ -1,3 +1,11 @@
+/* font-family: 'Satoshi', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'General Sans', sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   text-align: center;
 }
@@ -9,12 +17,12 @@ hr {
 
 h1,
 h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'General Sans', sans-serif;
 }
 
 h1 {
-  font-size: 18px;
-  margin-top: 10px;
+  font-size: 88px;
+  margin: 0;
 }
 
 h2 {
@@ -25,7 +33,7 @@ h2 {
 
 p,
 a {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 p {
@@ -34,8 +42,8 @@ p {
 }
 
 .hero-section {
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex;
+  justify-content: flex-start; */
   margin-bottom: 100px;
   margin-left: 200px;
   margin-right: 200px;
@@ -52,20 +60,27 @@ p {
 }
 
 .intro-p {
-  font-size: 36px;
+  font-size: 22px;
+  width: 75%;
+}
+
+.profile-pic {
+  width: 380px;
+  filter: grayscale(1);
 }
 
 .skill-icons {
   display: flex;
   margin-bottom: 100px;
-  justify-content: center;
   gap: 50px;
   margin-top: 25px;
+  padding-top: 25px;
 }
 
 .skills-heading {
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   margin-bottom: 0;
+  padding-top: 0;
 }
 .skill-icon {
   -webkit-animation-duration: 1s;
@@ -229,9 +244,19 @@ a:active {
 
   .intro-p {
     font-size: 22px;
+    width: initial;
   }
+
+  .profile-pic {
+    width: 100%;
+  }
+
   .about-me {
     width: auto;
+  }
+
+  .skill-icons {
+    justify-content: center;
   }
   .open-source {
     max-width: 75%;
