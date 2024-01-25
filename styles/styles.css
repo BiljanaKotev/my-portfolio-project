@@ -42,8 +42,6 @@ p {
 }
 
 .hero-section {
-  /* display: flex;
-  justify-content: flex-start; */
   margin-bottom: 100px;
   margin-left: 200px;
   margin-right: 200px;
@@ -67,6 +65,8 @@ p {
 .profile-pic {
   width: 380px;
   filter: grayscale(1);
+  opacity: 0.8;
+  margin: 0 auto;
 }
 
 .skill-icons {
@@ -245,10 +245,6 @@ a:active {
   .intro-p {
     font-size: 22px;
     width: initial;
-  }
-
-  .profile-pic {
-    width: 100%;
   }
 
   .about-me {
