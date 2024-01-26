@@ -270,10 +270,12 @@ a:active {
 .project-img-links-container {
   height: 50vh;
   line-height: 3;
+  letter-spacing: 2.28px;
 }
 
 .project-img-links-container > a {
   font-size: 22px;
+  border-bottom: 2px solid #0a66c2;
 }
 
 /* Contact page */
