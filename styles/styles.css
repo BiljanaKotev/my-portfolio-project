@@ -257,7 +257,7 @@ a:active {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.5;
+  opacity: 0.8;
   background: black;
   display: none;
   cursor: pointer;
@@ -265,6 +265,15 @@ a:active {
 
 .img-container-with-overlay:hover .project-img-overlay {
   display: block;
+}
+
+.project-img-links-container {
+  height: 50vh;
+  line-height: 3;
+}
+
+.project-img-links-container > a {
+  font-size: 22px;
 }
 
 /* Contact page */
