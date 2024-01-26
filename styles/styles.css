@@ -132,6 +132,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 .contact-link {
@@ -142,7 +143,6 @@ a {
   padding: 10px 15px 10px 15px;
   border: none;
   margin-bottom: 50px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 a i {
@@ -153,8 +153,8 @@ a:hover i {
   transform: scale(1.5);
 }
 
-a.nav-link:hover,
-a,
+/* a.nav-link:hover,
+a, */
 .fa-twitter {
   color: #29a8df;
 }
@@ -192,9 +192,9 @@ a:active {
 }
 
 .about-me {
-  padding-left: 25px;
-  padding-right: 25px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  text-align: left;
+  line-height: 2;
+  word-spacing: 1px;
 }
 
 .profile-img {
@@ -203,14 +203,68 @@ a:active {
 }
 
 /* Work page */
-.projext-container {
+/* .projext-container {
   margin-top: 75px;
 }
 
 .project-img {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   object-fit: contain;
+}
+
+.img-container-with-overlay {
+  position: relative;
+}
+
+.project-img-overlay {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 0;
+  left: 143px;
+  opacity: 0.5;
+  background: black;
+  display: none;
+  cursor: pointer;
+}
+
+.img-container-with-overlay:hover .project-img-overlay {
+  display: block;
+} */
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.img-container-with-overlay {
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+}
+
+.project-img-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  background: black;
+  display: none;
+  cursor: pointer;
+}
+
+.img-container-with-overlay:hover .project-img-overlay {
+  display: block;
 }
 
 /* Contact page */
