@@ -1,3 +1,11 @@
+/* font-family: 'Satoshi', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'General Sans', sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   text-align: center;
 }
@@ -9,12 +17,12 @@ hr {
 
 h1,
 h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'General Sans', sans-serif;
 }
 
 h1 {
-  font-size: 18px;
-  margin-top: 10px;
+  font-size: 88px;
+  margin: 0;
 }
 
 h2 {
@@ -25,7 +33,7 @@ h2 {
 
 p,
 a {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 p {
@@ -34,8 +42,6 @@ p {
 }
 
 .hero-section {
-  display: flex;
-  justify-content: flex-start;
   margin-bottom: 100px;
   margin-left: 200px;
   margin-right: 200px;
@@ -52,20 +58,29 @@ p {
 }
 
 .intro-p {
-  font-size: 36px;
+  font-size: 22px;
+  width: 75%;
+}
+
+.profile-pic {
+  width: 380px;
+  filter: grayscale(1);
+  opacity: 0.8;
+  margin: 0 auto;
 }
 
 .skill-icons {
   display: flex;
   margin-bottom: 100px;
-  justify-content: center;
   gap: 50px;
   margin-top: 25px;
+  padding-top: 25px;
 }
 
 .skills-heading {
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   margin-bottom: 0;
+  padding-top: 0;
 }
 .skill-icon {
   -webkit-animation-duration: 1s;
@@ -117,6 +132,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 .contact-link {
@@ -127,7 +143,6 @@ a {
   padding: 10px 15px 10px 15px;
   border: none;
   margin-bottom: 50px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 a i {
@@ -138,14 +153,12 @@ a:hover i {
   transform: scale(1.5);
 }
 
-a.nav-link:hover,
-a,
 .fa-twitter {
   color: #29a8df;
 }
 
 a:hover {
-  color: grey;
+  color: #29a8df;
 }
 
 a:active,
@@ -177,9 +190,9 @@ a:active {
 }
 
 .about-me {
-  padding-left: 25px;
-  padding-right: 25px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  text-align: left;
+  line-height: 2;
+  word-spacing: 1px;
 }
 
 .profile-img {
@@ -188,20 +201,55 @@ a:active {
 }
 
 /* Work page */
-.projext-container {
-  margin-top: 75px;
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project-img {
-  width: 250px;
-  height: 250px;
-  object-fit: contain;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.img-container-with-overlay {
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+}
+
+.project-img-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  background: black;
+  display: none;
+  cursor: pointer;
+}
+
+.img-container-with-overlay:hover .project-img-overlay {
+  display: block;
+}
+
+.project-img-links-container {
+  height: 50vh;
+  line-height: 3;
+  letter-spacing: 2.28px;
+}
+
+.project-img-links-container > a {
+  font-size: 22px;
+  border-bottom: 2px solid #0a66c2;
 }
 
 /* Contact page */
 
 .contact-box {
-  border: 3px solid #000000;
   margin: 25px;
   display: inline-block;
   padding: 25px;
@@ -209,6 +257,7 @@ a:active {
 
 .resume-link:hover {
   color: #ffffff;
+  border-bottom: 2px solid #fff;
 }
 
 /* MEDIA QUERIES */
@@ -229,9 +278,15 @@ a:active {
 
   .intro-p {
     font-size: 22px;
+    width: initial;
   }
+
   .about-me {
     width: auto;
+  }
+
+  .skill-icons {
+    justify-content: center;
   }
   .open-source {
     max-width: 75%;
