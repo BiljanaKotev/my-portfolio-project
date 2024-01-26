@@ -153,14 +153,12 @@ a:hover i {
   transform: scale(1.5);
 }
 
-/* a.nav-link:hover,
-a, */
 .fa-twitter {
   color: #29a8df;
 }
 
 a:hover {
-  color: grey;
+  color: #29a8df;
 }
 
 a:active,
@@ -203,35 +201,6 @@ a:active {
 }
 
 /* Work page */
-/* .projext-container {
-  margin-top: 75px;
-}
-
-.project-img {
-  width: 350px;
-  height: 350px;
-  object-fit: contain;
-}
-
-.img-container-with-overlay {
-  position: relative;
-}
-
-.project-img-overlay {
-  width: 350px;
-  height: 350px;
-  position: absolute;
-  top: 0;
-  left: 143px;
-  opacity: 0.5;
-  background: black;
-  display: none;
-  cursor: pointer;
-}
-
-.img-container-with-overlay:hover .project-img-overlay {
-  display: block;
-} */
 
 .project-container {
   display: flex;
@@ -281,7 +250,6 @@ a:active {
 /* Contact page */
 
 .contact-box {
-  border: 3px solid #000000;
   margin: 25px;
   display: inline-block;
   padding: 25px;
@@ -289,6 +257,7 @@ a:active {
 
 .resume-link:hover {
   color: #ffffff;
+  border-bottom: 2px solid #fff;
 }
 
 /* MEDIA QUERIES */
