@@ -305,3 +305,14 @@ a:active {
     margin: 0 auto;
   }
 }
+
+@media (max-width: 560px) {
+  h1 {
+    font-size: 44px;
+  }
+
+  .intro-p {
+    font-size: 18px;
+    padding: 25px;
+  }
+}
