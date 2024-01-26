@@ -137,6 +137,18 @@ a {
 
 .contact-link {
   background-color: #29a8df;
+  color: #fff;
+}
+
+.contact-link:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.about-link:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+  color: #fff;
+  text-decoration: underline;
 }
 
 .btn {
